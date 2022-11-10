@@ -51,7 +51,7 @@ void AProjectile::BeginPlay()
 
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpluse, const FHitResult& Hit)
 {
-	Destroy();
+	//Destroy();
 }
 
 void AProjectile::SpawnTrailSystem()
