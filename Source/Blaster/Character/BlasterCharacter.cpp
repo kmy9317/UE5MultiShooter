@@ -125,7 +125,7 @@ void ABlasterCharacter::MulticastElim_Implementation()
 	bDisableGameplay = true;
 	if (Combat)
 	{
-		Combat->FireButtonPressed(false);
+		//Combat->FireButtonPressed(false);
 	}
 
 	// Disable Collision
