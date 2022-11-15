@@ -49,9 +49,9 @@ void AProjectileBullet::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 				return;
 			}
 			ABlasterCharacter* HitCharacter = Cast<ABlasterCharacter>(OtherActor);
-			if (bUseServerSideRewind && OwnerCharacter->GetLagCompensation() && OwnerCharacter->IsLocallyControlled())
+			if (bUseServerSideRewind && OwnerCharacter->GetLagCompensation() && OwnerCharacter->IsLocallyControlled() && HitCharacter)
 			{
-				OwnerCharacter->GetLagCompensation()->ProjectileServerSideRewind(
+				OwnerCharacter->GetLagCompensation()->ProjectileServerScoreRequest(
 					HitCharacter,
 					TraceStart,
 					InitialVelocity,
