@@ -45,7 +45,6 @@ void AProjectile::BeginPlay()
 
 	if (HasAuthority())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("OnHit"));
 		CollisionBox->OnComponentHit.AddDynamic(this, &AProjectile::OnHit);
 	}
 }
