@@ -23,6 +23,7 @@ public:
 /**
  * 
  */
+
 UCLASS()
 class BLASTER_API ABlasterHUD : public AHUD
 {
