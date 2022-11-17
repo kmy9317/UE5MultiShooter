@@ -930,7 +930,7 @@ void ABlasterCharacter::PollInit()
 			BlasterPlayerState->AddToDefeats(0);
 
 			ABlasterGameState* BlasterGameState = Cast<ABlasterGameState>(UGameplayStatics::GetGameState(this));
-			if (BlasterGameState && BlasterGameState->TopScoringPlayers.Contains(BlasterPlayerState))
+			if (BlasterGameState && BlasterGameState->TopScoringPlayers.Contains(BlasterPlayerState) && HasAuthority())
 			{
 				MulticastGainedTheLead();
 			}
