@@ -61,7 +61,16 @@ private:
 	float CrosshairSpreadMax = 16.f;
 
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<UUserWidget> ElimAnnouncementClass;
+	TSubclassOf<class UElimAnnouncement> ElimAnnouncementClass;
+
+	UPROPERTY(EditAnywhere)
+	float ElimAnnouncementTime = 1.5f;
+
+	UFUNCTION()
+	void ElimAnnouncementTimerFinished(UElimAnnouncement* MsgToRemove);
+
+	UPROPERTY()
+	TArray< UElimAnnouncement*> ElimMessages;
 
 public:
 	FORCEINLINE void SetHUDPackage(const FHUDPackage& Package) { HUDPackage = Package; }
