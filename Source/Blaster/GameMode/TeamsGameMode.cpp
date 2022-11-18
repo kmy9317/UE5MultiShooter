@@ -111,7 +111,7 @@ void ATeamsGameMode::PlayerEliminated(ABlasterCharacter* ElimmedCharacter, ABlas
 		{
 			BGameState->BlueTeamScores();
 		}
-		if (AttackerPlayerState->GetTeam() == ETeam::ET_BlueTeam)
+		if (AttackerPlayerState->GetTeam() == ETeam::ET_RedTeam)
 		{
 			BGameState->RedTeamScores();
 		}
