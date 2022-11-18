@@ -23,6 +23,10 @@ public:
 	//
 	// Team
 	//
+
+	void RedTeamScores();
+	void BlueTeamScoress();
+
 	TArray<ABlasterPlayerState*> RedTeam;
 	TArray<ABlasterPlayerState*> BlueTeam;
 
