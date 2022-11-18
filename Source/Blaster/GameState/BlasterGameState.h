@@ -25,7 +25,7 @@ public:
 	//
 
 	void RedTeamScores();
-	void BlueTeamScoress();
+	void BlueTeamScores();
 
 	TArray<ABlasterPlayerState*> RedTeam;
 	TArray<ABlasterPlayerState*> BlueTeam;
