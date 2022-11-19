@@ -254,4 +254,5 @@ private:
 public:	
 	FORCEINLINE int32 GetGrenades() const { return Grenades; }
 	bool ShouldSwapWeapons();
+	FORCEINLINE void SetFlag(AWeapon* Flag) { TheFlag = Flag; }
 };
